@@ -3,9 +3,9 @@ import type { Task } from "@/types";
 
 interface TaskListProps {
   tasks: Task[];
-  onToggleComplete?: (task: Task) => void;
-  onEdit?: (task: Task) => void;
-  onDelete?: (task: Task) => void;
+  onToggleComplete?: ((task: Task) => void) | undefined;
+  onEdit?: ((task: Task) => void) | undefined;
+  onDelete?: ((task: Task) => void) | undefined;
 }
 
 export function TaskList({ tasks, onToggleComplete, onEdit, onDelete }: TaskListProps) {

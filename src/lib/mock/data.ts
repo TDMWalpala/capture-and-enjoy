@@ -122,7 +122,6 @@ export function createMockTasks(): Task[] {
       ...base,
       id: "tsk_7",
       title: "Dentist appointment",
-      description: null ?? undefined,
       durationMinutes: 60,
       priority: "medium",
       status: "completed",
